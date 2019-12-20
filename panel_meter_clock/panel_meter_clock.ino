@@ -6,8 +6,14 @@
 #include "pins.h"
 #include "meters.h"
 #include "millis_reset.h"
+#include "display.h"
+#include "input.h"
 
-unsigned long timeNow = 0;
+int bl_mode = 0;            // 1 if LDR senses ambient light, 0 otherwise
+int ss_mode = 0;            // 1 if flashed LED for seconds, 0 otherwise
+int mtr_rt = 50;            // meter rating in microamperes
+
+unsigned long timeNow = 0;  // time looping variables
 unsigned long timeLast = 0;
 
 //Time start Settings:
@@ -59,10 +65,13 @@ void loop(){
     correctedToday = 1;
   }
 
-//every time 24 hours have passed since the initial starting time and it has not been reset this day before, add milliseconds or delay the program with some milliseconds.
-//Change these varialbes according to the error of your board.
-// The only way to find out how far off your boards internal clock is, is by uploading this sketch at exactly the same time as the real time, letting it run for a few days
-// and then determining how many seconds slow/fast your boards internal clock is on a daily average. (24 hours).
+//every time 24 hours have passed since the initial starting time and it has not
+//been reset this day before, add milliseconds or delay the program with some 
+//milliseconds. Change these varialbes according to the error of your board.
+//The only way to find out how far off your boards internal clock is, is by 
+//uploading this sketch at exactly the same time as the real time, letting 
+//it run for a few days and then determining how many seconds slow/fast your 
+//boards internal clock is on a daily average. (24 hours).
   if (hours == 24 - startingHour + 2) {
     correctedToday = 0;
   }
