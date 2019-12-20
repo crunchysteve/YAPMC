@@ -7,6 +7,6 @@ The idea of this project is to develop a clock which gives the illusion of being
 
 With the addition of an AM/PM light, LED backlighting within the meters (done while removing the ballast) and 2 buttons, for setting hours and minutes respectively, the clock is as familiar to operate as any retro bedside clock from the 70s or 80s. By using a millis() reset and time correction factors should minimise the need to reset the time. Optionally, the any small amount of drift can be corrected with the buttons.
 
-#Scope
+## Scope
 
 (more to come)
