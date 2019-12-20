@@ -1,7 +1,7 @@
 # YAPMC: Yet Another Panel Meter Clock
 Using panel meters, driven by an Arduino or compatible, to tell time without an RTC, using SO-45, Class 2.5, panel meters easily found on "teh bays."
 
-             |              
+Meter        | Case
 ------------ | -------------
 ![s-l1600](s-l1600.jpg) | ![Meter Case](panel-meter-clock-case/meter-clock-case-sml.png)
           
