@@ -12,7 +12,7 @@ With the addition of an AM/PM light, LED backlighting within the meters and 2 bu
 
 Future features will include option LDR sensing of ambient light via the analogue input. A flashing seconds light is also optional.
  
-This project is creative commons licenced and my be used provided full attribution, share-alike terms are met.
+This project is creative commons licenced and my be used for any purpose provided full attribution, share-alike terms are met.
 
 ## Scope
 
