@@ -26,5 +26,5 @@ This project is creative commons licenced and my be used for any purpose provide
 * __Meter backlights__ may simply be hardwired (on all the time) or, via pins D1 and D2, brightness managed via an LDR on A0, as well as potentially dimming the backlight significantly after 10PM via PWM.
 ## Future Development
 * __An alarm function__ could be added by using D0 as a setMode button and sacrificing flashing seconds on D5 to be used to send a tone to a buzzer instead. This may be added to a later version, but is not immediately supported in this version. There are insufficient pins on the D1 mini to have flashing seconds as well as an alarm function, but other boards, such as a NodeMCU ESP8266, typical ESP32 boards and most Arduini, will have sufficient pins to have a full feature set.
-* __Configuation by internal wireless AP and web server__ including configuration of connection to home wifi.
+* __Configuation by internal wireless AP and web server__ including configuration of connection to home wifi. The alarm function could also be managed from this feature, as well as simply from the front panel.
 * __NTP time management__ configurable in above web-based configuration feature.
