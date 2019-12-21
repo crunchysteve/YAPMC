@@ -15,12 +15,12 @@ Future features will include option LDR sensing of ambient light via the analogu
 This project is creative commons licenced and my be used for any purpose provided full attribution, share-alike terms are met.
 
 ## Scope
-*ESP8266* in form of D1 mini, powered by generic USB wall plug. Any Arduino or compatible should be usable in this project with little or no modification to the code, other than pin definitions in pins.h. Of course, your mileage may vary.
-*Hours and minutes display* via PWM on a pair of panel meters, driven via PWM on pins D6 (minutes) and D7 (hours)
-*Seconds and AM/PM* marked by an LED on pin D5 (seconds, optional, off for odd value, on for even value) and D8 (AM/PM)
-*Minutes and hours advance* via 2 momentary pushbuttons (or two-way momentary switch) connected to pins D3 (minutes) and D4 (hours)
-*Meter backlights* may simply be hardwired (on all the time) or, via pins D1 and D2, brightness managed via an LDR on A0, as well as potentially dimming the backlight significantly after 10PM via PWM.
-##Future Development
-*An alarm function* could be added by using D0 as a setMode button and sacrificing flashing seconds on D5 to be used to send a tone to a buzzer instead. This may be added to a later version, but is not immediately supported in this version. There are insufficient pins on the D1 mini to have flashing seconds as well as an alarm function, but other boards, such as a NodeMCU ESP8266, typical ESP32 boards and most Arduini, will have sufficient pins to have a full feature set.
-*Configuation by internal wireless AP and web server* including configuration of connection to home wifi.
-*NTP time setting* configurable in above web-based configuration feature.
+* __ESP8266__ in form of D1 mini, powered by generic USB wall plug. Any Arduino or compatible should be usable in this project with little or no modification to the code, other than pin definitions in pins.h. Of course, your mileage may vary.
+* __Hours and minutes display__ via PWM on a pair of panel meters, driven via PWM on pins D6 (minutes) and D7 (hours)
+* __Seconds and AM/PM marked by an LED__ on pin D5 (seconds, optional, off for odd value, on for even value) and D8 (AM/PM)
+* __Minutes and hours advance via momentary pushbuttons__ (or two-way momentary switch) connected to pins D3 (minutes) and D4 (hours)
+* __Meter backlights__ may simply be hardwired (on all the time) or, via pins D1 and D2, brightness managed via an LDR on A0, as well as potentially dimming the backlight significantly after 10PM via PWM.
+## Future Development
+* __An alarm function__ could be added by using D0 as a setMode button and sacrificing flashing seconds on D5 to be used to send a tone to a buzzer instead. This may be added to a later version, but is not immediately supported in this version. There are insufficient pins on the D1 mini to have flashing seconds as well as an alarm function, but other boards, such as a NodeMCU ESP8266, typical ESP32 boards and most Arduini, will have sufficient pins to have a full feature set.
+* __Configuation by internal wireless AP and web server__ including configuration of connection to home wifi.
+* __NTP time management__ configurable in above web-based configuration feature.
