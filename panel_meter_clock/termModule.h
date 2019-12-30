@@ -1,24 +1,25 @@
 #ifndef termModule_h
   #define termModule_h
+
   void term(){
-    if(seconds == 0){
-      Serial.println();
-      Serial.print("The time is: ");
+    if(debug == 1){
+      if(ampm == 0){
+        Serial.print("AM ");
+      } else {
+        Serial.print("PM ");
+      }
       Serial.print(hours);
       Serial.print(":");
       Serial.print(minutes);
+      Serial.print(":");
+      Serial.print(seconds);
       Serial.print(" ");
-      if(ampm==0){
-        Serial.println("AM");
+      if(seconds%2 == 0){
+        Serial.print(" ");
       } else {
-        Serial.println("PM");
+        Serial.print("*");
       }
-    } else {
-      if(seconds%2==0){
-        Serial.print("-");
-      } else {
-        Serial.print("|");
-      }
+      Serial.println();
     }
   }
 

@@ -22,5 +22,6 @@
  * Future features will include option LDR sensing of ambient light via the analogue input. A flashing seconds 
  * light is also optional.
  * 
- * This project is creative commons licenced and my be used provided full attribution, share-alike terms are met.
+ * This project is creative commons licenced and my be used for any purpose provided full attribution, 
+ * share-alike terms are met.
  */
