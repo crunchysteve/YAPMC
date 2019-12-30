@@ -16,7 +16,7 @@ This is still very much a work in progress and there may be traps and errors in 
 
 The time engine is very loosely based on code by Ruben Marc Speybrouck from "Timekeeping on ESP8266 & Arduino Uno WITHOUT an RTC (Real Time CLock)?" over at https://www.instructables.com/id/TESTED-Timekeeping-on-ESP8266-Arduino-Uno-WITHOUT-/ However, I've made some significant changes, such as adding the "ticks" functionality to reduce the impact of the millis() rollover to less than a second per rollover and, of course, replacing the terminal output with panel meters plus LEDs, and timesetting via pushbuttons. The terminal display function now has a debugging mode, set in config.h "debug", I recommend disabling it when you're ready for a production build.
 
-As of 30 December, 2019, I'm satisfied basic timekeeping and time setting via buttons works out of the box on a Wemos D1 mini. The test bed is intended as a late Christmas gift for my dad, and that's the board I sourced for the project. 
+As of 30 December, 2019, I'm satisfied basic timekeeping and time setting via buttons works out of the box on a Wemos D1 mini. The test bed is intended as a late Christmas gift for my dad, and that's the board I sourced for the project. Fritzing circuit diagrams will be added to the repo soon.
  
 This project is creative commons licenced and my be used for any purpose provided full attribution, share-alike terms are met.
 
