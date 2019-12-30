@@ -1,4 +1,4 @@
-* Currently Supported and Tested Hardware *
+*Currently Supported and Tested Hardware*
 
 Wemos D1 mini, D1 mini Pro, D1. (ESP8266 modules) Most ESP8266 boards should work with, at most, minor tweaks to pins.h.
 
