@@ -10,9 +10,9 @@ The idea of this project is to develop a clock which gives the illusion of being
 
 With the addition of an AM/PM light, LED backlighting within the meters and 2 buttons, for setting hours and minutes respectively, the clock is as familiar to operate as any retro bedside clock from the 70s or 80s. Time is counted in configurable ticks (100ms default) and the millis() reset is tested for and skipped. Any small amount of drift can be corrected with the minutes and hours setting buttons.
 
-Future features will include option LDR sensing of ambient light via the analogue input. A flashing seconds light is also optional.
+Future features will include optional LDR sensing of ambient light via the analogue input. The flashing seconds light is also optional.
 
-This is still very much a work in progress and there may be traps and errors in the code. However, do feel free to join the project. We're better in community than alone :D
+This is still very much a work in progress and there may be traps and errors in the code. However, do feel free to join the project, or fork your own. We're better in community than alone :D
 
 The time engine is very loosely based on code by Ruben Marc Speybrouck from "Timekeeping on ESP8266 & Arduino Uno WITHOUT an RTC (Real Time CLock)?" over at https://www.instructables.com/id/TESTED-Timekeeping-on-ESP8266-Arduino-Uno-WITHOUT-/ However, I've made some significant changes, such as adding the "ticks" functionality to reduce the impact of the millis() rollover to less than a second per rollover and, of course, replacing the terminal output with panel meters plus LEDs, and timesetting via pushbuttons. The terminal display function now has a debugging mode, set in config.h "debug", I recommend disabling it when you're ready for a production build.
 
