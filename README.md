@@ -1,3 +1,9 @@
+## Developer's note
+
+Development stalled on this project for a while. My dad died last year, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top of 2020, I had a heart attack. However, I plan to return to this, because I Big Sur finally, almosy by accident, on my M1 Mac, talks to my D1 Mini boards. Not quite sure how it happened, but what I did was attempt to install the USB serial driver, had that fail (because Big Sur), then got told there was a driver update that needed to be approved.
+
+So, long story short, I can program more than just Arduino boards and I'd chosen the D1 mini (ESP8266) because of the ability to give an "analog" clock a setup web page. Things to fix are the millis() timeout bug, add the web control panel and capability of being either WiFi host or station. 
+
 # YAPMC: Yet Another Panel Meter Clock
 Using panel meters, driven by an Arduino or compatible, to tell time without an RTC, using SO-45, Class 2.5, panel meters easily found on eBay or AliExpress, and the like.
 
