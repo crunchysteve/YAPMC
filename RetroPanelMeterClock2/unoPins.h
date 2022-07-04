@@ -20,4 +20,12 @@
     #define  A3 17
     #define  A4 18
     #define  A5 19
+
+    /***   Arduino Uno Specific Contants   ***/
+    const int A_PIN =  D2;   //  AM/PM light pin
+    const int M_PWM =  D3;   //  Minutes meter pin PWM pin
+    const int M_SET =  D4;   //  Minutes set button pin
+    const int H_SET =  D7;   //  Hours set button pin
+    const int H_PWM = D11;   //  Hours meter pin
+    const int S_PIN = D12;   //  Seconds light pin
 #endif
