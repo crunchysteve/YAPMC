@@ -1,16 +1,17 @@
 /***   Declare Tabs  ***/
+//  Select board definitions - more boards coming soon
+//  Decomment the lne relevant to your board before uploading
+//  D1mini (ESP8266) Pin Definition
 #include "D1MiniPins.h" //  The file defines the actual GPIO numbers according to pin names.
                         //  It can be edited or deleted to suit your board, provided D0, D1, etc, 
                         //  are defined as the correct pins.
 
-/***   Declare Contants   ***/
-const int A_PIN = D0;   //  AM/PM light pin
-const int M_PWM = D1;   //  Minutes meter pin
-const int H_PWM = D2;   //  Hours meter pin
-const int M_SET = D5;   //  Minutes set button pin
-const int H_SET = D6;   //  Hours set button pin
-const int S_PIN = D7;   //  Seconds light pin
+//  Arduino Uno Pin Definition
+//#include "unoPins.h" //  The file defines the actual GPIO numbers according to pin names.
+                        //  It can be edited or deleted to suit your board, provided D0, D1, etc, 
+                        //  are defined as the correct pins.
 
+/***   Define program Contants   ***/
 //  You may need to calibrate these figures according to your meters and 
 //  ballast resistors to find the right value per step. You may also only
 //  want to calculate minutes in increments of 5. In this case, make MSTEP = HSTEP;
