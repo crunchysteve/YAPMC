@@ -16,18 +16,18 @@
 //  ballast resistors to find the right value per step. You may also only
 //  want to calculate minutes in increments of 5. In this case, make MSTEP = HSTEP;
 //  and set M_INC to 5.
-const int HSTEP = 85;   //  PWM step incerment hours meter per hour (1 to 12)
-const int MSTEP = 17;   //  PWM step increment minutes meter per minute (0 to 59)
-const int M_INC = 1;    //  Increment index for minutes. Can be 1 for 0 to 59 or 5 for same in 12 steps
+#define HSTEP 85   //  PWM step incerment hours meter per hour (1 to 12)
+#define MSTEP 17   //  PWM step increment minutes meter per minute (0 to 59)
+#define M_INC 1    //  Increment index for minutes. Can be 1 for 0 to 59 or 5 for same in 12 steps
 
 /***   Declare Variables   ***/
 int scs = 0;                  //  seconds counter
 int mns = 0;                  //  minutes counter
 int hrs = 0;                  //  hours counter (Actual hour, less 1 to match 1 to 12 display on the meter)
 int a_p = 0;                  //  AM/PM toggle
-unsigned long current = 0;    //  current time at each test for 1 second elapsed
-unsigned long previous = 0;   //  time at previous test for 1 second elapsed
-unsigned long period = 1000;  //  period between tests (millis)
+uint32_t current = 0;    //  current time at each test for 1 second elapsed
+uint32_t previous = 0;   //  time at previous test for 1 second elapsed
+uint32_t period = 1000;  //  period between tests (millis)
 
 void setup() {
   pinMode(A_PIN,OUTPUT);      //  initialise the AM/PM light pin
@@ -47,8 +47,8 @@ void loop() {
 //  This function is essentially the blink without delay demo with
 //  an added test to correct for when the millis() counter resets.
 void asyncTimeTest(){
-  current = millis();                 //  Measure time now 
-  if(current - previous >= period){   //  check if 1 second has elapsed
+  current = (uint32_t)millis();                 //  Measure time now 
+  if((uint32_t)(current - previous) > period){   //  check if 1 second has elapsed
                                       //  If yes, increment the time by 1 second
     if(scs < 59){                     //  Check if a minute has elapsed.
       scs++;                          //  Increment seconds,
