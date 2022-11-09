@@ -1,4 +1,4 @@
-## Developer's note
+## Developer's/Maintainer's note
 
 Development stalled on this project for a while. My dad died in March 202, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top all that off at the end of 2020, I had a massive heart attack. Lucky I didn't join my dad in a tube of ashes! However, I have returned to this, and a few other projects.
 
