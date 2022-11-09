@@ -1,8 +1,8 @@
 ## Developer's note
 
-Development stalled on this project for a while. My dad died last year, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top of 2020, I had a heart attack. However, I plan to return to this, because I Big Sur finally, almosy by accident, on my M1 Mac, talks to my D1 Mini boards. Not quite sure how it happened, but what I did was attempt to install the USB serial driver, had that fail (because Big Sur), then got told there was a driver update that needed to be approved.
+Development stalled on this project for a while. My dad died in March 202, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top all that off at the end of 2020, I had a massive heart attack. Lucky I didn't join my dad in a tube of ashes! However, I have returned to this, and a few other projects.
 
-So, long story short, I can program more than just Arduino boards and I'd chosen the D1 mini (ESP8266) because of the ability to give an "analog" clock a setup web page. Things to fix are the millis() timeout bug, add the web control panel and capability of being either WiFi host or station. 
+So, long story short, I can program more than just Arduino boards and I'd chosen the D1 mini (ESP8266) because of the ability to give an "analog" clock a setup web page. The millis() rollover bug should now be fixed, too, but I still have to add the web control panel and wifi capabilities. (Station and host.)
 
 # YAPMC: Yet Another Panel Meter Clock
 Using panel meters, driven by an Arduino or compatible, to tell time without an RTC, using SO-45, Class 2.5, panel meters easily found on eBay or AliExpress, and the like.
@@ -28,6 +28,7 @@ This project is creative commons licenced and my be used for any purpose provide
 
 ## Scope
 * __ESP8266__ in form of D1 mini, powered by generic USB wall plug. Any Arduino or compatible should be usable in this project with little or no modification to the code, other than pin definitions in pins.h. Of course, your mileage may vary. (working)
+* __Uno__ Now supports Arduino Uno. Will attempt to add some other board descriptions, too, such as Mega, Nano and ESP32. More if asked and in my budget to get that board. Lodge an issue, or make your own and open a pull request.
 * __Hours and minutes display__ via PWM on a pair of panel meters, driven via PWM on pins D6 (minutes) and D7 (hours) (working)
 * __Seconds and AM/PM marked by an LED__ on pin D5 (seconds, optional, off for odd value, on for even value) and D8 (AM/PM) (verified in terminal monitor of Arduino IDE, LEDs not yet connected, but how hard is a digitalWrite(), seriously?!)
 * __Minutes and hours advance via momentary pushbuttons__ (or two-way momentary switch) connected to pins D3 (minutes) and D4 (hours) (Working)
@@ -36,3 +37,5 @@ This project is creative commons licenced and my be used for any purpose provide
 * __An alarm function__ could be added by using D0 as a setMode button and sacrificing flashing seconds on D5 to be used to send a tone to a buzzer instead. This may be added to a later version, but is not immediately supported in this version. There are insufficient pins on the D1 mini to have flashing seconds as well as an alarm function, but other boards, such as a NodeMCU ESP8266, typical ESP32 boards and most Arduini, will have sufficient pins to have a full feature set.
 * __Configuation by internal wireless AP and web server__ including configuration of connection to home wifi. The alarm function could also be managed from this feature, as well as simply from the front panel.
 * __NTP time management__ configurable in above web-based configuration feature.
+
+Dad's clock, which I inherited after he died, will always run the original, buggy firmware. Can't bring myself to change that one
