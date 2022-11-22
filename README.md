@@ -11,9 +11,12 @@ So, long story short, I can program more than just Arduino boards and I'd chosen
 # YAPMC: Yet Another Panel Meter Clock
 Using panel meters, driven by an Arduino or compatible, to tell time without an RTC, using SO-45, Class 2.5, panel meters easily found on eBay or AliExpress, and the like.
 
+![round-meter-dial](https://user-images.githubusercontent.com/46626696/203238151-de57e7d6-5c3d-478b-ad19-1cc08ff8be3d.jpg)
+
+
 Meter        | Face Art      | Finished Clock
 ------------ | ------------- | -------------
-![s-l1600](panel-meter-clock-case/s-l1600.jpg) | ![New dials](panel-meter-clock-case/round-meter-dial.png) | ![Meter Case](panel-meter-clock-case/clock-sml.jpeg)
+![s-l1600](panel-meter-clock-case/s-l1600.jpg) | ![New dials](panel-meter-clock-case/round-meter-dial.jpg) | ![Meter Case](panel-meter-clock-case/clock-sml.jpeg)
           
 ## Basics
 The idea of this project is to develop a clock which gives the illusion of being analog, despite being very digital inside. Even the drift resulting from not having a real time clock module is a deliberate choice. Using two SO-45 panel meters to display Hours and Minutes via PWM output on an ESP8266 (D1 mini, particularly), or any other class of microcontroller, gives an easy-to-read, general time, accurate to the minute. Ultimately, this will be a merch item as part of a series of artworks examining reframing our perceptions of time. This is clearly a digital clock, yet it emulates an analog clock, even down to imprecisions and drift, not just via the user interface. However, those with the skills to build, hack or modify their own units are totally welcome to do so! 
