@@ -2,6 +2,8 @@
 
 The clock I built dad (still working, BTW, after 3 years) was a bit of a "breadboard special." Now, I've bitten the bullet to create a printed circuit board, using Fritzing, and exporting the artwork as Gerber files.
 
+![YAPMC_PCBimg_D1mini_Version"](https://user-images.githubusercontent.com/46626696/203237052-1747fa44-66f8-4580-ad78-948db6ee14b4.png)
+
 ### How to use these files
 
 To order a small batch of boards, or to machine your own (double sided, I hope your CNC is accurate), 
