@@ -2,7 +2,7 @@
 
 Development stalled on this project for a while. My dad died in March 202, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top all that off at the end of 2020, I had a massive heart attack. Lucky I didn't join my dad in a tube of ashes! However, I have returned to this, and a few other projects.
 
-Now with custom PCB artwork! See the Fritzing project and the Gerber format zip file, recently added.
+Now with custom PCB artwork! See the [Fritzing project and the Gerber format zip file](https://github.com/crunchysteve/YAPMC/blob/master/Fritzing_Files/D1mini_Version/README.md), recently added.
 
 ![YAPMC_PCBimg_D1mini_Version"](https://user-images.githubusercontent.com/46626696/203237052-1747fa44-66f8-4580-ad78-948db6ee14b4.png)
 
