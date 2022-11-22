@@ -2,6 +2,10 @@
 
 Development stalled on this project for a while. My dad died in March 202, I had to close my workshop and pare that all down to fit into a corner of my home recording studio and then, to top all that off at the end of 2020, I had a massive heart attack. Lucky I didn't join my dad in a tube of ashes! However, I have returned to this, and a few other projects.
 
+Now with custom PCB artwork! See the Fritzing project and the Gerber format zip file, recently added.
+
+![YAPMC_PCBimg_D1mini_Version"](https://user-images.githubusercontent.com/46626696/203237052-1747fa44-66f8-4580-ad78-948db6ee14b4.png)
+
 So, long story short, I can program more than just Arduino boards and I'd chosen the D1 mini (ESP8266) because of the ability to give an "analog" clock a setup web page. The millis() rollover bug should now be fixed, too, but I still have to add the web control panel and wifi capabilities. (Station and host.)
 
 # YAPMC: Yet Another Panel Meter Clock
