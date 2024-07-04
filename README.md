@@ -1,4 +1,8 @@
-[Discuss the code or seek support for any of my code projects at my discussions page.](https://github.com/crunchysteve/crunchysteve.github.io/discussions)
+I'm not really interested in developing this project further. It was a great learning toy, helped me understand non-blocking code, impressed my late father no end and was a useful outlet, while grieving, to extend for a while. I've grown out of it now and gift it to the public to do with as they see fit.
+
+Cheers,
+Crunchy.
+
 ***
 
 ## Developer's/Maintainer's note
